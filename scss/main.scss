@@ -2,12 +2,12 @@
 @import "type";
 @import "sizes";
 @import "mixins";
+@import "../../node_modules/slicknav/scss/core";
+@import "layout";
 @import "nav";
 @import "home";
+@import "footer";
 
-.svgstore {
-  display: none;
-}
 
 
 #lektor-edit-link {
