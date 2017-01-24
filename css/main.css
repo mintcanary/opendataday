@@ -504,14 +504,15 @@ html {
       .home > section#resources > div > article svg {
         width: 120px;
         height: 120px;
-        fill: #FFB900;
         margin: 30px 15px 15px 15px; }
-        .home > section#resources > div > article svg + svg {
+        .home > section#resources > div > article svg.research {
+          fill: #FFB900; }
+        .home > section#resources > div > article svg.money {
           fill: #FF4900; }
-          .home > section#resources > div > article svg + svg + svg {
-            fill: #48C0AC; }
-            .home > section#resources > div > article svg + svg + svg + svg {
-              fill: #9B20DC; }
+        .home > section#resources > div > article svg.environment {
+          fill: #48C0AC; }
+        .home > section#resources > div > article svg.rights {
+          fill: #9B20DC; }
       .home > section#resources > div > article p {
         max-width: 770px;
         display: block;
