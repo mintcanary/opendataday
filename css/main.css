@@ -315,6 +315,8 @@ html {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; }
+  .home > section article {
+    font-size: 1.2em; }
   .home > section h2 {
     font-size: 48px;
     text-transform: uppercase;
@@ -322,32 +324,55 @@ html {
   .home > section h3 {
     font-size: 26px;
     margin-bottom: 0; }
-  .home > section .about article,
-  .home > section .this-year article {
-    padding: 30px; }
-  .home > section .about article h2 {
-    color: #0086FF; }
-  .home > section .about article > a {
-    background-color: #0086FF;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 0.8em 1.8em;
-    display: inline-block; }
   @media (min-width: 1260px) {
-    .home > section .about article {
-      padding-left: 0; } }
-  @media (min-width: 600px) {
+    .home > section .about article,
+    .home > section .this-year article {
+      max-width: 440px; } }
+  .home > section .about article {
+    padding: 30px 30px 15px 30px; }
+    .home > section .about article h2 {
+      color: #0086FF; }
+    @media (min-width: 1260px) {
+      .home > section .about article {
+        padding-left: 0; } }
+    .home > section .about article + a {
+      background-color: #0086FF;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.8em 1.8em;
+      display: inline-block;
+      margin-left: 30px;
+      margin-bottom: 30px; }
+      @media (min-width: 1260px) {
+        .home > section .about article + a {
+          margin-left: 0; } }
+  @media (min-width: 900px) {
     .home > section .about {
       float: left;
       width: 50%; } }
+  @media (min-width: 1260px) {
+    .home > section .about {
+      position: relative;
+      height: 540px; }
+      .home > section .about:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 270px 270px 0 0;
+        border-color: #fff transparent transparent transparent;
+        top: 0;
+        left: 100%;
+        z-index: 1; } }
   .home > section .this-year {
     background-color: #9B20DC;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative; }
-    @media (min-width: 600px) {
+    @media (min-width: 900px) {
       .home > section .this-year {
         float: right;
         width: 50%; }
@@ -360,8 +385,51 @@ html {
           width: 50vw;
           background-color: #9B20DC; } }
     @media (min-width: 1260px) {
-      .home > section .this-year article {
-        padding-right: 0; } }
+      .home > section .this-year {
+        height: 540px; }
+        .home > section .this-year:before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 270px 270px;
+          border-color: transparent transparent #9B20DC transparent;
+          bottom: 0;
+          right: 100%;
+          z-index: 1; } }
+    .home > section .this-year article {
+      padding: 30px; }
+      @media (min-width: 1260px) {
+        .home > section .this-year article {
+          padding-right: 0;
+          text-align: right;
+          float: right; } }
+    .home > section .this-year ul {
+      padding: 0;
+      margin: 0 15px;
+      clear: right; }
+      .home > section .this-year ul::after {
+        clear: both;
+        content: "";
+        display: table; }
+      @media (min-width: 1260px) {
+        .home > section .this-year ul {
+          margin-right: -15px; } }
+      .home > section .this-year ul li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box; }
+        .home > section .this-year ul li svg {
+          width: 100px;
+          height: 100px;
+          fill: currentColor; }
+        .home > section .this-year ul li p {
+          margin-top: 0; }
   .home > section#who {
     background-color: #0086FF;
     color: #fff;
@@ -373,8 +441,6 @@ html {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 1.5em; }
-        .home > section#who > div article p {
-          font-size: 1.2em; }
         @media (min-width: 1260px) {
           .home > section#who > div article {
             margin-left: -30px;
