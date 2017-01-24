@@ -257,17 +257,18 @@ html {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3) and (min-width: 720px), only screen and (min--moz-device-pixel-ratio: 1.3) and (min-width: 720px), only screen and (-o-min-device-pixel-ratio: 1.3 / 1) and (min-width: 720px), only screen and (min-resolution: 125dpi) and (min-width: 720px), only screen and (min-resolution: 1.3dppx) and (min-width: 720px) {
     .home .banner {
       background-image: url(../images/banner_2x.png); } }
-  .home .banner > div {
+  .home .banner > a {
     display: table-cell;
     vertical-align: middle;
     padding: 30px;
-    text-align: center; }
-    .home .banner > div h1 {
+    text-align: center;
+    color: #1A1A1A; }
+    .home .banner > a h1 {
       text-transform: capitalize;
       font-size: 9vmin;
       margin-bottom: 1vh;
       line-height: 1.5; }
-      .home .banner > div h1 span {
+      .home .banner > a h1 span {
         background-color: #1A1A1A;
         color: #fff;
         -webkit-font-smoothing: antialiased;
@@ -275,9 +276,9 @@ html {
         position: relative;
         z-index: 1;
         display: inline-block; }
-        .home .banner > div h1 span a {
+        .home .banner > a h1 span a {
           color: inherit; }
-        .home .banner > div h1 span:after {
+        .home .banner > a h1 span:after {
           content: '\00a0';
           display: block;
           background-color: #1A1A1A;
@@ -286,23 +287,23 @@ html {
           top: 0;
           bottom: 0;
           z-index: -1; }
-        .home .banner > div h1 span.l1 {
+        .home .banner > a h1 span.l1 {
           z-index: 2; }
-        .home .banner > div h1 span.l2 {
+        .home .banner > a h1 span.l2 {
           top: -0.3em; }
-    .home .banner > div p {
+    .home .banner > a p {
       font-weight: bold;
       font-size: 4vmin;
       display: inline-block;
       max-width: 50%;
       mix-blend-mode: lighten;
       line-height: 1.3; }
-      .home .banner > div p span {
+      .home .banner > a p span {
         background-color: #fff;
         position: relative;
         z-index: 1;
         display: inline-block; }
-        .home .banner > div p span:after {
+        .home .banner > a p span:after {
           content: '\00a0';
           display: block;
           background-color: #fff;
@@ -312,8 +313,16 @@ html {
           bottom: 0;
           z-index: -1; }
       @media (max-width: 900px) {
-        .home .banner > div p br {
+        .home .banner > a p br {
           display: none; } }
+    .home .banner > a .down {
+      display: block;
+      opacity: 0.5;
+      position: relative;
+      bottom: -2vh; }
+      .home .banner > a .down svg {
+        height: 64px;
+        fill: #fff; }
   @media (min-width: 600px) {
     .home .banner + .main-nav, .home .banner + .sticky-wrapper .main-nav {
       margin-top: -97px; }
