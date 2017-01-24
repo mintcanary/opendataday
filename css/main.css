@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0; }
 
+a {
+  color: #0086FF; }
+  a:hover, a:active {
+    color: #FF6200; }
+
 .slicknav_btn {
   position: relative;
   display: block;
@@ -270,6 +275,8 @@ html {
         position: relative;
         z-index: 1;
         display: inline-block; }
+        .home .banner > div h1 span a {
+          color: inherit; }
         .home .banner > div h1 span:after {
           content: '\00a0';
           display: block;
@@ -330,7 +337,7 @@ html {
   @media (min-width: 1260px) {
     .home > section .about header,
     .home > section .this-year header {
-      max-width: 440px; } }
+      max-width: 450px; } }
   .home > section .about header {
     padding: 30px 30px 15px 30px; }
     .home > section .about header h2 {
@@ -375,6 +382,8 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative; }
+    .home > section .this-year a {
+      color: inherit; }
     @media (min-width: 900px) {
       .home > section .this-year {
         float: right;
@@ -441,6 +450,8 @@ html {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
+    .home > section#who a {
+      color: inherit; }
     @media (min-width: 1260px) {
       .home > section#who {
         position: relative;
@@ -548,16 +559,20 @@ html {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-    .home > section#support > div > header {
-      padding: 30px 30px 0 30px; }
-      .home > section#support > div > header + a {
-        background-color: #fff;
-        color: #9B20DC;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 0.8em 1.8em;
-        display: inline-block;
-        margin: 30px; }
+    .home > section#support a {
+      color: inherit; }
+    .home > section#support > div {
+      padding-bottom: 30px; }
+      .home > section#support > div > header {
+        padding: 30px 30px 0 30px; }
+        .home > section#support > div > header + a {
+          background-color: #fff;
+          color: #9B20DC;
+          font-weight: bold;
+          text-decoration: none;
+          padding: 0.8em 1.8em;
+          display: inline-block;
+          margin: 30px; }
     @media (min-width: 1260px) {
       .home > section#support {
         position: relative;
@@ -579,10 +594,15 @@ html {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  .site-footer a {
+    color: inherit; }
   .site-footer > div {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; }
+    .site-footer > div > span {
+      display: block;
+      padding: 30px 30px 15px 30px; }
 
 #lektor-edit-link {
   display: none; }
