@@ -151,6 +151,7 @@
           @include button;
           margin-left: $gutter;
           margin-bottom: $gutter;
+          margin-top: -$gutter/2;
 
           @media (min-width:$max-screen) {
             margin-left: 0;
