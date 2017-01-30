@@ -375,7 +375,8 @@ html {
       padding: 0.8em 1.8em;
       display: inline-block;
       margin-left: 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-top: -15px; }
       @media (min-width: 1260px) {
         .home > section .about header + a {
           margin-left: 0; } }
